@@ -15,7 +15,7 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <?php
-            $dir = './images/';
+            $dir = 'images/';
             $file_list = array_diff(scandir($dir), array('..', '.'));
             
             if (!empty($file_list)) {
