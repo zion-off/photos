@@ -25,17 +25,17 @@ main section .carousel-container .item {
   height: 100%;
   position: relative;
   display: none;
-  animation: fade 0.3s ease-in-out;
+  animation: fade 0s linear;
 }
 main section .carousel-container .item .numbertext {
   padding: 0.5rem 0.75rem;
   position: absolute;
-  top: 1rem;
+  bottom: 1rem;
   right: 1rem;
   border-radius: 0.9375rem;
-  font-size: 0.875rem;
+  font-size: 0.575rem;
   color: #f2f2f2;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 main section .carousel-container .item .image {
   width: 100%;
