@@ -15,24 +15,13 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <?php
-            $dir = 'images/';
+            $dir = './images/';
             $file_list = array_diff(scandir($dir), array('..', '.'));
             
-            if (!empty($file_list)) {
-                $counter = 0;
-                foreach($file_list as $item) {
-                    $counter++;
-                    echo '<div class="carousel-item';
-                    if ($counter == 1) {
-                        echo ' active';
-                    }
-                    echo '">';
-                    echo '<img src="' . $dir . $item . '" class="d-block w-100">';
-                    echo '</div>';
-                }
-            } else {
-                echo '<div class="carousel-item active">';
-                echo '<img src="images/no_images.jpg" class="d-block w-100">';
+            foreach($file_list as $item)
+            {
+                echo '<div class="carousel-item">';
+                echo '<img="' . $item . '" class="d-block w-100">';
                 echo '</div>';
             }
             ?>
